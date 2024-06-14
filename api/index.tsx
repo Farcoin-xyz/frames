@@ -97,7 +97,6 @@ app.frame('/', async (c) => {
             fontStyle: 'normal',
             letterSpacing: '-0.025em',
             lineHeight: 1.4,
-            marginTop: 30,
             textAlign: 'left',
             padding: '0 120px',
             whiteSpace: 'pre-wrap',
@@ -172,6 +171,7 @@ app.frame('/finish', async (c) => {
     intents: [
       <Button.Redirect location={`https://basescan.org/tx/${state.transactionId}`}>View Transaction</Button.Redirect>,
       <Button.Redirect location="https://farcoin.xyz">Visit Farcoin</Button.Redirect>,
+      <Button.Redirect location="https://warpcast.com/~/compose?text=Mint%20my%20likes%20on%20Farcoin!&embeds[]=https://frame.farcoin.xyz/api">Share Frame</Button.Redirect>,
     ],
   });
 });
@@ -361,6 +361,7 @@ app.frame('/check', async (c) => {
       ),
       intents: [
         <Button.Redirect location="https://farcoin.xyz">Visit Farcoin</Button.Redirect>,
+        <Button.Redirect location="https://warpcast.com/~/compose?text=Mint%20my%20likes%20on%20Farcoin!&embeds[]=https://frame.farcoin.xyz/api">Share Frame</Button.Redirect>,
       ],
     });
   }
