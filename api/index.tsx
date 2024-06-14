@@ -40,6 +40,7 @@ app.frame('/', async (c) => {
     previousState.transactionId = null;
   });
   return c.res({
+    title: 'Farcoin'
     action: '/check',
     image: (
       <div
@@ -65,27 +66,11 @@ app.frame('/', async (c) => {
             fontWeight: 'bold',
             letterSpacing: '-0.025em',
             lineHeight: 1.4,
-            marginTop: 30,
             padding: '0 120px',
             whiteSpace: 'pre-wrap',
           }}
         >
-          Have I liked one of your casts?
-        </div>
-        <div
-          style={{
-            display: 'flex',
-            color: 'white',
-            fontSize: 60,
-            fontStyle: 'normal',
-            fontWeight: 'bold',
-            letterSpacing: '-0.025em',
-            lineHeight: 1.4,
-            padding: '0 120px',
-            whiteSpace: 'pre-wrap',
-          }}
-        >
-          Mint my fides!
+          Mint my likes as social currency ⬇️
         </div>
         <div
           style={{
@@ -101,7 +86,23 @@ app.frame('/', async (c) => {
             whiteSpace: 'pre-wrap',
           }}
         >
-          Fides are likes, brought onchain
+          Have I liked one of your casts?
+        </div>
+        <div
+          style={{
+            display: 'flex',
+            color: 'white',
+            fontSize: 32,
+            fontStyle: 'normal',
+            letterSpacing: '-0.025em',
+            lineHeight: 1.4,
+            marginTop: 30,
+            textAlign: 'left',
+            padding: '0 120px',
+            whiteSpace: 'pre-wrap',
+          }}
+        >
+          Fides are likes, brought onchain.
         </div>
         <div
           style={{
@@ -115,7 +116,7 @@ app.frame('/', async (c) => {
             whiteSpace: 'pre-wrap',
           }}
         >
-          Liking a cast issues your fides to others
+          Liking a cast issues your fides to others.
         </div>
       </div>
     ),
